@@ -140,9 +140,10 @@ public class TitleScene extends PixelScene {
 				parent.add(wnd);
 			}
 		};
-		btnSupport.icon(Icons.get(Icons.GOLD));
-		add(btnSupport);
-		
+//		przycisk support usuwam
+//		btnSupport.icon(Icons.get(Icons.GOLD));
+//		add(btnSupport);
+//
 		TitleButton btnRankings = new TitleButton(Messages.get(this, "rankings")){
 			@Override
 			protected void onClick() {
@@ -169,7 +170,7 @@ public class TitleScene extends PixelScene {
 			}
 		};
 		btnChanges.icon(Icons.get(Icons.CHANGES));
-		add(btnChanges);
+		//add(btnChanges);
 		
 		TitleButton btnAbout = new TitleButton(Messages.get(this, "about")){
 			@Override
@@ -177,7 +178,7 @@ public class TitleScene extends PixelScene {
 				ShatteredPixelDungeon.switchNoFade( AboutScene.class );
 			}
 		};
-		btnAbout.icon(Icons.get(Icons.SHPX));
+		btnAbout.icon(Icons.get(Icons.SM));
 		add(btnAbout);
 		
 		final int BTN_HEIGHT = 21;
@@ -186,24 +187,24 @@ public class TitleScene extends PixelScene {
 		GAP = Math.max(GAP, 2);
 
 		if (landscape()) {
-			btnPlay.setRect(title.x-50, topRegion+GAP, ((title.width()+100)/2)-1, BTN_HEIGHT);
+			btnPlay.setRect(title.x-50, topRegion+GAP, ((title.width()+100))-1, BTN_HEIGHT);
 			align(btnPlay);
-			btnSupport.setRect(btnPlay.right()+2, btnPlay.top(), btnPlay.width(), BTN_HEIGHT);
-			btnRankings.setRect(btnPlay.left() + (btnPlay.width()*.33f)+1, btnPlay.bottom()+ GAP, (btnPlay.width()*.67f)-1, BTN_HEIGHT);
+			//btnSupport.setRect(btnPlay.right()+2, btnPlay.top(), btnPlay.width(), BTN_HEIGHT);
+			btnRankings.setRect(btnPlay.left() + (btnPlay.width()*0)+1, btnPlay.bottom()+ GAP, (btnPlay.width()/2)-1, BTN_HEIGHT);
 			btnBadges.setRect(btnRankings.right()+2, btnRankings.top(), btnRankings.width(), BTN_HEIGHT);
-			btnChanges.setRect(btnRankings.left(), btnRankings.bottom() + GAP, btnRankings.width(), BTN_HEIGHT);
-			btnAbout.setRect(btnChanges.right()+2, btnChanges.top(), btnRankings.width(), BTN_HEIGHT);
+			//btnChanges.setRect(btnRankings.left(), btnRankings.bottom() + GAP, btnRankings.width(), BTN_HEIGHT);
+			btnAbout.setRect(btnRankings.left(), btnRankings.bottom()+GAP, btnRankings.width()*2, BTN_HEIGHT);
 		} else {
 			btnPlay.setRect(title.x, topRegion+GAP, title.width(), BTN_HEIGHT);
 			align(btnPlay);
 			btnRankings.setRect(btnPlay.left(), btnPlay.bottom()+ GAP, (btnPlay.width()/2)-1, BTN_HEIGHT);
 			btnBadges.setRect(btnRankings.right()+2, btnRankings.top(), btnRankings.width(), BTN_HEIGHT);
-			btnChanges.setRect(btnRankings.left(), btnRankings.bottom()+ GAP, btnRankings.width(), BTN_HEIGHT);
-			btnAbout.setRect(btnChanges.right()+2, btnChanges.top(), btnChanges.width(), BTN_HEIGHT);
+			//btnChanges.setRect(btnRankings.left(), btnRankings.bottom()+ GAP, btnRankings.width(), BTN_HEIGHT);
+			btnAbout.setRect(btnRankings.left(), btnRankings.bottom()+ GAP, btnRankings.width()*2, BTN_HEIGHT);
 			btnSupport.setRect(btnPlay.left(), btnAbout.bottom()+ GAP, btnPlay.width(), BTN_HEIGHT);
 		}
-
-		BitmapText version = new BitmapText( "v" + Game.version, pixelFont);
+//		Game.version, pixelFont);
+		BitmapText version = new BitmapText( Game.version, pixelFont);
 		version.measure();
 		version.hardlight( 0x888888 );
 		version.x = w - version.width() - 4;
@@ -220,7 +221,7 @@ public class TitleScene extends PixelScene {
 
 		LanguageButton btnLang = new LanguageButton();
 		btnLang.setRect(pos, 0, 16, 20);
-		add( btnLang );
+	//	add( btnLang );
 
 		ExitButton btnExit = new ExitButton();
 		btnExit.setPos( w - btnExit.width(), 0 );

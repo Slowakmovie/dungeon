@@ -85,7 +85,7 @@ public class GooSprite extends MobSprite {
 
 	@Override
 	public int blood() {
-		return 0xFF000000;
+		return 0xFFFF6200;
 	}
 
 	public void spray(boolean on){
@@ -111,7 +111,7 @@ public class GooSprite extends MobSprite {
 		public GooParticle() {
 			super();
 
-			color( 0x000000 );
+			color( 0xaa4302 );
 			lifespan = 0.3f;
 
 			acc.set( 0, +50 );

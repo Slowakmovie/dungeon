@@ -663,7 +663,7 @@ public class ItemSpriteSheet {
 	public static final int BANDOLIER   = BAGS+3;
 	public static final int HOLSTER     = BAGS+4;
 	static{
-		assignItemRect(VIAL,        12, 12);
+		assignItemRect(VIAL,        12, 16);
 		assignItemRect(POUCH,       14, 15);
 		assignItemRect(HOLDER,      16, 16);
 		assignItemRect(BANDOLIER,   15, 16);

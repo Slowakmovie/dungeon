@@ -1,16 +1,13 @@
 # Słowak Movie Dungeon
 
-A Roguelike RPG, with randomly generated levels, items, enemies, and traps! Based on the [source code of Pixel Dungeon](https://github.com/00-Evan/pixel-dungeon-gradle), by [Watabou](https://www.watabou.ru).
+Gra RPG, z losowo generowanymi poziomami, przedmiotami i przeciwnikami, osadzona w reaalich chorzowsiego "Słowaka".
+Bazuje na kodzie żródłowym  [Pixel Dungeon](https://github.com/00-Evan/pixel-dungeon-gradle), stworzonym przez [Watabou](https://www.watabou.ru), jak i póżniejszej modyfikacji [Shattered-Pixel-Dungeon](https://github.com/00-Evan/shattered-pixel-dungeon) auortstwa [00-Evan](https://github.com/00-Evan).
 
-Shattered Pixel Dungeon currently compiles for Android and desktop platforms. It is available from [GitHub](https://github.com/00-Evan/shattered-pixel-dungeon/releases), [Google Play](https://play.google.com/store/apps/details?id=com.shatteredpixel.shatteredpixeldungeon), [Amazon](https://www.amazon.com/Shattered-Pixel-Dungeon/dp/B00OH2C21M), and [F-Droid](https://f-droid.org/repository/browse/?fdid=com.shatteredpixel.shatteredpixeldungeon).
+)Słowak Movie dungeon zostało wydane na platformy Android i komputery obłsugujące Java. Można ją pobrać z [GitHub](https://github.com/Slowakmovie/dungeon/releases), lub ze strony [Słowak Movie](https://movie.slowacki.edu.pl/smd-download/)
 
-If you like this game, please consider [supporting me on Patreon](https://www.patreon.com/ShatteredPixel)!
+Oficjalna strona Słowak Movie: [movie.slowacki.edu.pl](https://move.slowacki.edu.pl)
 
-There is an official blog for this project at [ShatteredPixel.com](http://www.shatteredpixel.com).
-
-The game also has a translation project hosted on [Transifex](https://www.transifex.com/shattered-pixel/shattered-pixel-dungeon/).
-
-If you'd like to work with the code, you can find the following guides in `/docs`:
+Jeśli chcesz skompilować grę samemu możesz wspomóc się angielskim poradnikiem do ShatteredPD w `/docs`:
 - [Compiling for Android.](docs/getting-started-android.md)
     - **[If you plan to distribute on Google Play please read the end of this guide.](docs/getting-started-android.md#distributing-your-apk)**
 - [Compiling for desktop platforms.](docs/getting-started-desktop.md)
